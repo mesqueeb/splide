@@ -1,6 +1,6 @@
 /*!
  * Splide.js
- * Version  : 2.4.14
+ * Version  : 2.4.15
  * License  : MIT
  * Copyright: 2020 Naotoshi Fujita
  */
@@ -827,6 +827,7 @@ var FADE = 'fade';
         transition: "transform " + speed + "ms " + options.easing,
         transform: "translate(" + coord.x + "px," + coord.y + "px)"
       });
+      setTimeout(done, speed);
     }
   };
 });
